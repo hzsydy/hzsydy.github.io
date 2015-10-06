@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Du&#39;s blog</title>
+  <title>Rx鞋习笔记1 | Du&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Du's blog">
-<meta property="og:url" content="http://hzsydy.github.io/index.html">
+  <meta name="description" content="基本上完全翻译自文档。翻译轮子文档，造福大众。。。
+（话说这玩意儿文档搞的这么高端，叫什么Sequence，我觉得就是在装逼。。。
+首先作为一个Observer最重要的就是IObserver和IObservable了。[title:666] []12345678910111213141516//Defines a provider for push-based notification.publi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rx鞋习笔记1">
+<meta property="og:url" content="http://hzsydy.github.io/2015/10/06/RxLearnNote1/index.html">
 <meta property="og:site_name" content="Du's blog">
-<meta property="og:description">
+<meta property="og:description" content="基本上完全翻译自文档。翻译轮子文档，造福大众。。。
+（话说这玩意儿文档搞的这么高端，叫什么Sequence，我觉得就是在装逼。。。
+首先作为一个Observer最重要的就是IObserver和IObservable了。[title:666] []12345678910111213141516//Defines a provider for push-based notification.publi">
+<meta property="og:updated_time" content="2015-10-06T13:48:40.767Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Du's blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Rx鞋习笔记1">
+<meta name="twitter:description" content="基本上完全翻译自文档。翻译轮子文档，造福大众。。。
+（话说这玩意儿文档搞的这么高端，叫什么Sequence，我觉得就是在装逼。。。
+首先作为一个Observer最重要的就是IObserver和IObservable了。[title:666] []12345678910111213141516//Defines a provider for push-based notification.publi">
   
   
     <link rel="icon" href="favicon.png">
@@ -129,8 +136,7 @@
 </aside>
 
       
-      <section id="main">
-      <article id="post-RxLearnNote1" class="article article-type-post" itemscope itemprop="blogPost">
+      <section id="main"><article id="post-RxLearnNote1" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
     
@@ -138,8 +144,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/06/RxLearnNote1/">Rx鞋习笔记1</a>
+    <h1 class="article-title" itemprop="name">
+      Rx鞋习笔记1
     </h1>
   
 
@@ -184,111 +190,23 @@
     </footer>
   </div>
   
-</article>
-
-
-
     
-      <article id="post-RxNet" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/06/RxNet/">Rx体验报告</a>
-    </h1>
   
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/10/06/RxNet/">
-      <time datetime="2015-10-06T12:39:39.000Z" itemprop="datePublished">2015-10-06</time>
+    <a href="/2015/10/06/RxNet/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">Rx体验报告</div>
     </a>
-  </div>
+  
+</nav>
 
 
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>今天刷知乎的时候发现一个神奇的东西叫做ReactiveX。大家看过GoF的都听说过大名鼎鼎的Observer，我刚见到这玩意儿的时候只过了自动化系C程的连callback都不知道的我觉得这玩意儿真是屌爆了，于是对着GoF和Primer摆弄了一整天写了一个Observer，还差点传到git上装逼——幸亏没有传，成功保证了我git的逼格（喂喂喂我从未见过如此厚颜无耻之人好伐以及我的git其实真是一点逼格都没有）</p>
-<p>然后我一看哇塞微软友情出品的轮子，还自带文档，当即就抓了个DotNet版爽了一把。</p>
-<figure class="highlight c"><figcaption><span>[#]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    var subject = <span class="keyword">new</span> Subject&lt;<span class="built_in">string</span>&gt;();</span><br><span class="line">    WriteSequenceToConsole(subject);</span><br><span class="line">    subject.OnNext(<span class="string">"a"</span>);</span><br><span class="line">    subject.OnNext(<span class="string">"b"</span>);</span><br><span class="line">    subject.OnNext(<span class="string">"c"</span>);</span><br><span class="line">    Console.ReadKey();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">WriteSequenceToConsole</span><span class="params">(IObservable&lt;<span class="built_in">string</span>&gt; sequence)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    sequence.Subscribe(Console.WriteLine);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>麻麻再也不用担心我手写Observer会傻逼了好伐。</p>
-<p>更多玩法见<a href="http://introtorx.com/" target="_blank" rel="external">http://introtorx.com/</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://hzsydy.github.io/2015/10/06/RxNet/" data-id="cifffa14c00026k77slqu137w" class="article-share-link">分享到</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
 
 
-
-    
-      <article id="post-test" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/10/04/test/">initiation</a>
-    </h1>
-  
-
-        <div class="article-meta">
-          
-  <div class="article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/10/04/test/">
-      <time datetime="2015-10-04T07:57:25.000Z" itemprop="datePublished">2015-10-04</time>
-    </a>
-  </div>
-
-
-          
-        </div>
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-                
-        <p>今天装了一天机什么都没装成，一怒之下准备弃坑，然而想到虽然我弃坑了但是后来人前赴后继的往里面跳也不好，所以想搭个blog记录一下。</p>
-<p>结果blog也是个坑，天可怜见我一开始竟然妄想用wordpress写git page，装完世界上最好吃的全家桶兴冲冲搞完结果发现诶git只允许静态页面，于是瞬间爆炸。</p>
-<p>在浩然兄的建议之下就搞了这个hexo版的blog。hexo平易近人（主要是指文档科学，我上次见过这么科学的文档大概是微软的.net系列文档，而且不需要学习世界上最好的语言，确切的说什么都不用懂，小白也可以搭blog，科学合理。</p>
-<p>至于如何正确的使用hexo，你看文档就好了。</p>
-<p>唉明明邓俊辉已经出了PA2我却在这里瞎巨擘搞一些软用没有的东西，真是作死作得不要不要的。以及，我怎么觉得我更加像个软件狗。。。虽然数据结构使我觉得我真做软件狗大概也不会混的比现在好。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://hzsydy.github.io/2015/10/04/test/" data-id="cifffa13x00016k77q89gp2sj" class="article-share-link">分享到</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-    </section>
+</section>
       
         <aside id="sidebar">
   
