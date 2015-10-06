@@ -3,17 +3,18 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | Du&#39;s blog</title>
+  <title>Rx体验报告 | Du&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Du's blog">
-<meta property="og:url" content="http://hzsydy.github.io/archives/2015/index.html">
+  <meta name="description" content="今天刷知乎的时候发现一个神奇的东西叫做ReactiveX。大家看过GoF的都听说过大名鼎鼎的Observer，我刚见到这玩意儿的时候只过了自动化系C程的连callback都不知道的我觉得这玩意儿真是屌爆了，于是对着GoF和Primer摆弄了一整天写了一个Observer，还差点传到git上装逼——幸亏没有传，成功保证了我git的逼格（喂喂喂我从未见过如此厚颜无耻之人好伐以及我的git其实真是一点逼">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Rx体验报告">
+<meta property="og:url" content="http://hzsydy.github.io/2015/10/06/RxNet/index.html">
 <meta property="og:site_name" content="Du's blog">
-<meta property="og:description">
+<meta property="og:description" content="今天刷知乎的时候发现一个神奇的东西叫做ReactiveX。大家看过GoF的都听说过大名鼎鼎的Observer，我刚见到这玩意儿的时候只过了自动化系C程的连callback都不知道的我觉得这玩意儿真是屌爆了，于是对着GoF和Primer摆弄了一整天写了一个Observer，还差点传到git上装逼——幸亏没有传，成功保证了我git的逼格（喂喂喂我从未见过如此厚颜无耻之人好伐以及我的git其实真是一点逼">
+<meta property="og:updated_time" content="2015-10-06T12:50:32.528Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Du's blog">
-<meta name="twitter:description">
+<meta name="twitter:title" content="Rx体验报告">
+<meta name="twitter:description" content="今天刷知乎的时候发现一个神奇的东西叫做ReactiveX。大家看过GoF的都听说过大名鼎鼎的Observer，我刚见到这玩意儿的时候只过了自动化系C程的连callback都不知道的我觉得这玩意儿真是屌爆了，于是对着GoF和Primer摆弄了一整天写了一个Observer，还差点传到git上装逼——幸亏没有传，成功保证了我git的逼格（喂喂喂我从未见过如此厚颜无耻之人好伐以及我的git其实真是一点逼">
   
   
     <link rel="icon" href="favicon.png">
@@ -129,83 +130,68 @@
 </aside>
 
       
-      <section id="main">
-      <div class="archive-year-wrap">
-        <a href="/archives/2015" class="archive-year">2015</a>
-      </div>
-      <section class="archives-wrap">
-        <div class="archives">
+      <section id="main"><article id="post-RxNet" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
     
-    <div class="archive-article-thumbnail">
-      <a href="/2015/10/06/RxNet/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
-    </div>
     
-    <header class="archive-article-header">
-      
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/06/RxNet/">Rx体验报告</a>
+    <h1 class="article-title" itemprop="name">
+      Rx体验报告
     </h1>
   
 
-      
-        
-  <div class="archive-article-date">
+        <div class="article-meta">
+          
+  <div class="article-date">
     <i class="fa fa-calendar"></i>
     <a href="/2015/10/06/RxNet/">
-      <time datetime="2015-10-06T12:39:39.000Z" itemprop="datePublished">10月 6</time>
+      <time datetime="2015-10-06T12:39:39.000Z" itemprop="datePublished">2015-10-06</time>
     </a>
   </div>
 
 
-      
-    </header>
-  </div>
-</article>
-  
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
+          
+        </div>
+      </header>
     
-    <div class="archive-article-thumbnail">
-      <a href="/2015/10/04/test/" class="thumbnail">
-  
-    <span class="thumbnail-image thumbnail-none"></span>
-  
-</a>
+    <div class="article-entry" itemprop="articleBody">
+      
+                
+        <p>今天刷知乎的时候发现一个神奇的东西叫做ReactiveX。大家看过GoF的都听说过大名鼎鼎的Observer，我刚见到这玩意儿的时候只过了自动化系C程的连callback都不知道的我觉得这玩意儿真是屌爆了，于是对着GoF和Primer摆弄了一整天写了一个Observer，还差点传到git上装逼——幸亏没有传，成功保证了我git的逼格（喂喂喂我从未见过如此厚颜无耻之人好伐以及我的git其实真是一点逼格都没有）</p>
+<p>然后我一看哇塞微软友情出品的轮子，还自带文档，当即就抓了个DotNet版爽了一把。</p>
+<figure class="highlight c"><figcaption><span>[#]</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span><span class="params">(<span class="built_in">string</span>[] args)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    var subject = <span class="keyword">new</span> Subject&lt;<span class="built_in">string</span>&gt;();</span><br><span class="line">    WriteSequenceToConsole(subject);</span><br><span class="line">    subject.OnNext(<span class="string">"a"</span>);</span><br><span class="line">    subject.OnNext(<span class="string">"b"</span>);</span><br><span class="line">    subject.OnNext(<span class="string">"c"</span>);</span><br><span class="line">    Console.ReadKey();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">WriteSequenceToConsole</span><span class="params">(IObservable&lt;<span class="built_in">string</span>&gt; sequence)</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    sequence.Subscribe(Console.WriteLine);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>麻麻再也不用担心我手写Observer会傻逼了好伐。</p>
+<p>更多玩法见<a href="http://introtorx.com/" target="_blank" rel="external">http://introtorx.com/</a></p>
+
+      
     </div>
+    <footer class="article-footer">
+      <a data-url="http://hzsydy.github.io/2015/10/06/RxNet/" data-id="ciffd7ba00000mc77unqj2q3c" class="article-share-link">分享到</a>
+      
+      
+    </footer>
+  </div>
+  
     
-    <header class="archive-article-header">
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/10/04/test/">initiation</a>
-    </h1>
   
-
-      
-        
-  <div class="archive-article-date">
-    <i class="fa fa-calendar"></i>
-    <a href="/2015/10/04/test/">
-      <time datetime="2015-10-04T07:57:25.000Z" itemprop="datePublished">10月 4</time>
+    <a href="/2015/10/04/test/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">下一篇</strong>
+      <div class="article-nav-title">initiation</div>
     </a>
-  </div>
-
-
-      
-    </header>
-  </div>
-</article>
   
-    </div></section>
-  </section>
+</nav>
+
+
+  
+</article>
+
+
+</section>
       
         <aside id="sidebar">
   
