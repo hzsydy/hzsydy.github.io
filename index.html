@@ -4,20 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal Homepage of Yuan Dong">
+    <meta name="description"
+        content="Yuan Dong is a Research Engineer at Meta working on human understanding, self-supervised learning and conditional multimodal video generation.">
     <meta name="keywords" content="Yuan Dong">
     <meta name="author" content="Yuan Dong">
 
     <!-- OpenGraph Meta Tags -->
-    <meta property="og:title" content="Personal Homepage of Yuan Dong">
-    <meta property="og:description" content="TBD">
-    <meta property="og:image" content="assets/favicon.ico">
+    <meta property="og:title" content="Yuan Dong">
+    <meta property="og:description"
+        content="Yuan Dong is a Research Engineer at Meta working on human understanding, self-supervised learning and conditional multimodal video generation.">
+    <meta property="og:image" content="https://hzsydy.github.io/assets/lca.png">
     <meta property="og:url" content="https://hzsydy.github.io">
     <meta property="og:type" content="website">
 
     <title>Yuan Dong</title>
 
     <!-- CSS Stylesheet -->
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,7 +35,7 @@
     <!-- Navigation Header -->
     <header id="header">
         <div class="nav-container">
-            <a href="#" class="logo">
+            <a href="#about" class="logo">
                 YUAN DONG
             </a>
 
@@ -44,23 +47,25 @@
 
             <div class="social-pill">
                 <!-- GitHub -->
-                <a href="https://github.com/hzsydy" target="_blank" title="GitHub" class="social-icon">
-                    <svg viewBox="0 0 24 24">
+                <a href="https://github.com/hzsydy" target="_blank" rel="noopener noreferrer" title="GitHub"
+                    aria-label="GitHub" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path
                             d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
                     </svg>
                 </a>
                 <!-- Google Scholar -->
                 <a href="https://scholar.google.com/citations?user=MHwprqAAAAAJ&hl=en" target="_blank"
-                    title="Google Scholar" class="social-icon">
-                    <svg viewBox="0 0 24 24">
+                    rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path
                             d="M5.242 13.769L0.5 9.5 12 1l11.5 8.5-4.742 4.269C17.409 12.458 14.819 11.5 12 11.5s-5.409 0.958-6.758 2.269zM12 13c-3.866 0-7 3.134-7 7 0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2 0-3.866-3.134-7-7-7z" />
                     </svg>
                 </a>
                 <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/ydong142857/" target="_blank" title="LinkedIn" class="social-icon">
-                    <svg viewBox="0 0 24 24">
+                <a href="https://www.linkedin.com/in/ydong142857/" target="_blank" rel="noopener noreferrer"
+                    title="LinkedIn" aria-label="LinkedIn" class="social-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path
                             d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
                     </svg>
@@ -71,23 +76,24 @@
 
     <!-- Main Content Container -->
     <main>
-
         <!-- About Section -->
-        <section id="about" style="padding-top: 140px;">
+        <section id="about" class="first-section">
             <span class="section-tag">Biography</span>
             <h2 class="section-title"><span>About Me</span></h2>
 
             <div class="bio-grid">
                 <div class="glass-panel bio-card reveal">
                     <p>
-                        I am currently a Research Engineer at Meta, where I architected the algorithm for Meta's
-                        largest 3D human-centric data engine, from data curation to 3D asset generation, for hundreds of
-                        millions of videos.
+                        I am currently a research engineer at Meta.
                     </p>
                     <p>
-                        My research interest lies in human-centric perception, self-supervised learning, and conditioned
-                        video generation. I would like to pursue a foundational model which can truly understand motion,
-                        behaviour and interaction with the physical world.
+                        I architected Meta's largest 3D human-centric data engine, from data curation to various
+                        mid-level representations, for hundreds of millions of videos from multiple data sources.
+                    </p>
+                    <p>
+                        My research interest lies in human understanding, self-supervised learning and conditional
+                        multimodal video generation. I am interested in building foundation models that can understand
+                        motions, behaviors, and interactions with the physical world.
                     </p>
                 </div>
 
@@ -102,7 +108,6 @@
                             <div class="timeline-period">2020 - Present</div>
                             <div class="timeline-role">Research Engineer</div>
                             <div class="timeline-inst">Meta</div>
-                            <!-- <div class="timeline-desc">[TODO: Add description of role and contributions.]</div> -->
                         </div>
 
                         <!-- Education CMU -->
@@ -110,7 +115,6 @@
                             <div class="timeline-period">2018 - 2019</div>
                             <div class="timeline-role">M.S. in Computer Vision (MSCV)</div>
                             <div class="timeline-inst">Carnegie Mellon University</div>
-                            <!-- <div class="timeline-desc">[TODO: Add description.]</div> -->
                         </div>
 
                         <!-- Education Tsinghua -->
@@ -118,7 +122,6 @@
                             <div class="timeline-period">2014 - 2018</div>
                             <div class="timeline-role">B.S. in Automation</div>
                             <div class="timeline-inst">Tsinghua University</div>
-                            <!-- <div class="timeline-desc">[TODO: Add description.]</div> -->
                         </div>
                     </div>
                 </div>
@@ -138,25 +141,34 @@
                 <!-- Paper 1: Large-scale Codec Avatars -->
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
-                        <img src="./assets/lca.png" alt="Large-scale Codec Avatars teaser">
+                        <img src="./assets/lca.png" alt="Large-scale Codec Avatars teaser" loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">CVPR 2026</div>
-                        <a href="https://arxiv.org/abs/2604.02320" target="_blank" class="pub-title">Large-scale Codec
+                        <a href="https://arxiv.org/abs/2604.02320" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">Large-scale Codec
                             Avatars: The Unreasonable Effectiveness of Large-scale Avatar Pretraining</a>
                         <div class="pub-authors">
-                            Junxuan Li*, Rawal Khirodkar*, et al.
+                            Junxuan Li*, Rawal Khirodkar*, Chengan He, Zhongshi Jiang, Giljoo Nam, Lingchen Yang,
+                            Jihyun Lee, Egor Zakharov, Zhaoen Su, Rinat Abdrashitov, <strong>Yuan Dong</strong>,
+                            Julieta Martinez, Kai Li, Qingyang Tan, Takaaki Shiratori, Matthew Hu, Peihong Guo, Xuhua
+                            Huang, Ariyan Zarei, Marco Pesavento, Yichen Xu, He Wen, Teng Deng, Wyatt Borsos, Anjali
+                            Thakrar, Jean-Charles Bazin, Carsten Stoll, Ginés Hidalgo, James Booth, Lucy Wang, Xiaowen
+                            Ma, Yu Rong, Sairanjith Thalanki, Chen Cao, Christian Häne, Abhishek Kar, Sofien Bouaziz,
+                            Jason Saragih, Yaser Sheikh, Shunsuke Saito
                         </div>
 
                         <div class="pub-links">
-                            <a href="https://junxuan-li.github.io/lca/" target="_blank" class="pub-link-btn featured">
+                            <a href="https://junxuan-li.github.io/lca/" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                                 </svg>
                                 Project Page
                             </a>
-                            <a href="https://arxiv.org/abs/2604.02320" target="_blank" class="pub-link-btn">
+                            <a href="https://arxiv.org/abs/2604.02320" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
@@ -170,11 +182,13 @@
                 <!-- Paper 2: DuoMo -->
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
-                        <img src="https://yufu-wang.github.io/duomo/static/images/teaser.jpg" alt="DuoMo teaser">
+                        <img src="https://yufu-wang.github.io/duomo/static/images/teaser.jpg" alt="DuoMo teaser"
+                            loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">CVPR 2026</div>
-                        <a href="https://arxiv.org/abs/2603.03265" target="_blank" class="pub-title">DuoMo: Dual Motion
+                        <a href="https://arxiv.org/abs/2603.03265" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">DuoMo: Dual Motion
                             Diffusion for World-Space Human Reconstruction</a>
                         <div class="pub-authors">
                             Yufu Wang, Evonne Ng, Soyong Shin, Rawal Khirodkar, <strong>Yuan Dong</strong>, Zhaoen Su,
@@ -182,14 +196,16 @@
                         </div>
 
                         <div class="pub-links">
-                            <a href="https://yufu-wang.github.io/duomo/" target="_blank" class="pub-link-btn featured">
+                            <a href="https://yufu-wang.github.io/duomo/" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                                 </svg>
                                 Project Page
                             </a>
-                            <a href="https://arxiv.org/abs/2603.03265" target="_blank" class="pub-link-btn">
+                            <a href="https://arxiv.org/abs/2603.03265" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
@@ -204,11 +220,12 @@
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
                         <img src="https://raw.githubusercontent.com/facebookresearch/sapiens2/main/docs/assets/sapiens2.gif"
-                            alt="Sapiens2 teaser">
+                            alt="Sapiens2 teaser" loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">ICLR 2026</div>
-                        <a href="https://arxiv.org/abs/2604.21681" target="_blank" class="pub-title">Sapiens2:
+                        <a href="https://arxiv.org/abs/2604.21681" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">Sapiens2:
                             High-Resolution Human-Centric Vision Models</a>
                         <div class="pub-authors">
                             Rawal Khirodkar, He Wen, Julieta Martinez, <strong>Yuan Dong</strong>, Su Zhaoen, Shunsuke
@@ -217,21 +234,23 @@
 
                         <div class="pub-links">
                             <a href="https://rawalkhirodkar.github.io/sapiens2/" target="_blank"
-                                class="pub-link-btn featured">
+                                rel="noopener noreferrer" class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                                 </svg>
                                 Project Page
                             </a>
-                            <a href="https://arxiv.org/abs/2604.21681" target="_blank" class="pub-link-btn">
+                            <a href="https://arxiv.org/abs/2604.21681" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
                                 </svg>
                                 arXiv
                             </a>
-                            <a href="https://github.com/facebookresearch/sapiens2" target="_blank" class="pub-link-btn">
+                            <a href="https://github.com/facebookresearch/sapiens2" target="_blank"
+                                rel="noopener noreferrer" class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
@@ -245,25 +264,37 @@
                 <!-- Paper 7: MHR -->
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
-                        <img src="https://github.com/facebookresearch/MHR/raw/main/images/teaser.jpg" alt="MHR teaser">
+                        <img src="https://github.com/facebookresearch/MHR/raw/main/images/teaser.jpg" alt="MHR teaser"
+                            loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">Tech Report</div>
-                        <a href="https://arxiv.org/abs/2511.15586" target="_blank" class="pub-title">MHR: Momentum Human
+                        <a href="https://arxiv.org/abs/2511.15586" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">MHR: Momentum Human
                             Rig</a>
                         <div class="pub-authors">
-                            Aaron Ferguson, et al.
+                            Aaron Ferguson, Ahmed A. A. Osman, Berta Bescos, Carsten Stoll, Chris Twigg, Christoph
+                            Lassner, David Otte, Eric Vignola, Fabian Prada, Federica Bogo, Igor Santesteban, Javier
+                            Romero, Jenna Zarate, Jeongseok Lee, Jinhyung Park, Jinlong Yang, John Doublestein, Kishore
+                            Venkateshan, Kris Kitani, Ladislav Kavan, Marco Dal Farra, Matthew Hu, Matthew Cioffi,
+                            Michael Fabris, Michael Ranieri, Mohammad Modarres, Petr Kadlecek, Rawal Khirodkar, Rinat
+                            Abdrashitov, Romain Prévost, Roman Rajbhandari, Ronald Mallet, Russell Pearsall, Sandy Kao,
+                            Sanjeev Kumar, Scott Parrish, Shoou-I Yu, Shunsuke Saito, Takaaki Shiratori, Te-Li Wang,
+                            Tony Tung, Yichen Xu, <strong>Yuan Dong</strong>, Yuhua Chen, Yuanlu Xu, Yuting Ye, Zhongshi
+                            Jiang
                         </div>
 
                         <div class="pub-links">
-                            <a href="https://arxiv.org/abs/2511.15586" target="_blank" class="pub-link-btn featured">
+                            <a href="https://arxiv.org/abs/2511.15586" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
                                 </svg>
                                 arXiv
                             </a>
-                            <a href="https://github.com/facebookresearch/MHR" target="_blank" class="pub-link-btn">
+                            <a href="https://github.com/facebookresearch/MHR" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
@@ -279,18 +310,31 @@
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
                         <img src="https://github.com/facebookresearch/ava-256/assets/3733964/622eb5af-6375-4f24-830d-a0025d7a7d23"
-                            alt="Codec Avatar Studio teaser">
+                            alt="Codec Avatar Studio teaser" loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">NeurIPS 2024</div>
-                        <a href="https://openreview.net/forum?id=Kv0oL0aCR7" target="_blank" class="pub-title">Codec
+                        <a href="https://openreview.net/forum?id=Kv0oL0aCR7" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">Codec
                             Avatar Studio: Paired Human Captures for Complete, Driveable, and Generalizable Avatars</a>
                         <div class="pub-authors">
-                            Julieta Martinez, et al.
+                            Julieta Martinez, Emily Kim, Javier Romero, Timur Bagautdinov, Shunsuke Saito, Shoou-I Yu,
+                            Stuart Anderson, Michael Zollhöfer, Te-Li Wang, Shaojie Bai, Chenghui Li, Shih-En Wei,
+                            Rohan Joshi, Wyatt Borsos, Tomas Simon, Jason Saragih, Paul Theodosis, Alexander Greene,
+                            Anjani Josyula, Silvio Mano Maeta, Andrew I Jewett, Simion Venshtain, Christopher Heilman,
+                            Yueh-Tung Chen, Sidi Fu, Mohamed Ezzeldin A. Elshaer, Tingfang Du, Longhua Wu, Shen-Chi
+                            Chen, Kai Kang, Michael Wu, Youssef Emad, Steven Longay, Ashley Brewer, Hitesh Shah, James
+                            Booth, Taylor Koska, Kayla Haidle, Matthew Andromalos, Joanna Ching-Hui Hsu, Thomas Dauer,
+                            Peter Selednik, Tim Godisart, Scott Ardisson, Matthew Cipperly, Ben Humberston, Lon Farr,
+                            Bob Hansen, Peihong Guo, Dave Braun, Steven Krenn, He Wen, Lucas Evans, Natalia Fadeeva,
+                            Matthew Stewart, Gabriel Schwartz, Divam Gupta, Gyeongsik Moon, Kaiwen Guo,
+                            <strong>Yuan Dong</strong>, Yichen Xu, Takaaki Shiratori, Fabian Andres Prada Nino, Bernardo
+                            R Pires, Bo Peng, Julia Buffalini, Autumn Trimble, Kevyn Alex Anthony McPhail, Melissa
+                            Robinson Schoeller, Yaser Sheikh
                         </div>
 
                         <div class="pub-links">
-                            <a href="https://openreview.net/pdf?id=a6DteCxiw6" target="_blank"
+                            <a href="https://openreview.net/pdf?id=a6DteCxiw6" target="_blank" rel="noopener noreferrer"
                                 class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
@@ -298,14 +342,16 @@
                                 </svg>
                                 Paper
                             </a>
-                            <a href="https://github.com/facebookresearch/ava-256" target="_blank" class="pub-link-btn">
+                            <a href="https://github.com/facebookresearch/ava-256" target="_blank"
+                                rel="noopener noreferrer" class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
                                 </svg>
                                 Code (AVA-256)
                             </a>
-                            <a href="https://github.com/facebookresearch/goliath" target="_blank" class="pub-link-btn">
+                            <a href="https://github.com/facebookresearch/goliath" target="_blank"
+                                rel="noopener noreferrer" class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z" />
@@ -326,22 +372,27 @@
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">CVPR 2024</div>
-                        <a href="https://arxiv.org/abs/2401.05334" target="_blank" class="pub-title">URHand: Universal
+                        <a href="https://arxiv.org/abs/2401.05334" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">URHand: Universal
                             Relightable Hands</a>
                         <div class="pub-authors">
-                            Zhaoxi Chen, et al.
+                            Zhaoxi Chen, Gyeongsik Moon, Kaiwen Guo, Chen Cao, Stanislav Pidhorskyi, Tomas Simon, Rohan
+                            Joshi, <strong>Yuan Dong</strong>, Yichen Xu, Bernardo Pires, He Wen, Lucas Evans, Bo Peng,
+                            Julia Buffalini, Autumn Trimble, Kevyn McPhail, Melissa Schoeller, Shoou-I Yu, Javier
+                            Romero, Michael Zollhöfer, Yaser Sheikh, Ziwei Liu, Shunsuke Saito
                         </div>
 
                         <div class="pub-links">
                             <a href="https://frozenburning.github.io/projects/urhand" target="_blank"
-                                class="pub-link-btn featured">
+                                rel="noopener noreferrer" class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                                 </svg>
                                 Project Page
                             </a>
-                            <a href="https://arxiv.org/abs/2401.05334" target="_blank" class="pub-link-btn">
+                            <a href="https://arxiv.org/abs/2401.05334" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
@@ -355,11 +406,13 @@
                 <!-- Paper 6: Modeling Clothing -->
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
-                        <img src="https://xiangdonglai.github.io/SA21.png" alt="Modeling Clothing teaser">
+                        <img src="https://xiangdonglai.github.io/SA21.png" alt="Modeling Clothing teaser"
+                            loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">SIGGRAPH Asia 2021</div>
-                        <a href="https://arxiv.org/abs/2106.14879" target="_blank" class="pub-title">Modeling Clothing
+                        <a href="https://arxiv.org/abs/2106.14879" target="_blank" rel="noopener noreferrer"
+                            class="pub-title">Modeling Clothing
                             as a Separate Layer for an Animatable Human Avatar</a>
                         <div class="pub-authors">
                             Donglai Xiang, Fabian Prada, Timur Bagautdinov, Weipeng Xu, <strong>Yuan Dong</strong>, He
@@ -368,14 +421,15 @@
 
                         <div class="pub-links">
                             <a href="https://research.fb.com/publications/modeling-clothing-as-a-separate-layer-for-an-animatable-human-avatar/"
-                                target="_blank" class="pub-link-btn featured">
+                                target="_blank" rel="noopener noreferrer" class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
                                 </svg>
                                 Project Page
                             </a>
-                            <a href="https://arxiv.org/abs/2106.14879" target="_blank" class="pub-link-btn">
+                            <a href="https://arxiv.org/abs/2106.14879" target="_blank" rel="noopener noreferrer"
+                                class="pub-link-btn">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
@@ -389,12 +443,13 @@
                 <!-- Paper 7: BodyFusion -->
                 <div class="glass-panel pub-card reveal">
                     <div class="pub-media">
-                        <img src="./assets/bodyfusion.png" alt="BodyFusion visual">
+                        <img src="./assets/bodyfusion.png" alt="BodyFusion visual" loading="lazy">
                     </div>
                     <div class="pub-info">
                         <div class="pub-venue-badge">ICCV 2017</div>
                         <a href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Yu_BodyFusion_Real-Time_Capture_ICCV_2017_paper.pdf"
-                            target="_blank" class="pub-title">BodyFusion: Real-time Capture of Human Motion and Surface
+                            target="_blank" rel="noopener noreferrer" class="pub-title">BodyFusion: Real-time Capture of
+                            Human Motion and Surface
                             Geometry Using a Single Depth Camera</a>
                         <div class="pub-authors">
                             Tao Yu, Kaiwen Guo, Feng Xu, <strong>Yuan Dong</strong>, Zhaoqi Su, Jianhui Zhao, Jianguo
@@ -403,7 +458,7 @@
 
                         <div class="pub-links">
                             <a href="https://openaccess.thecvf.com/content_ICCV_2017/papers/Yu_BodyFusion_Real-Time_Capture_ICCV_2017_paper.pdf"
-                                target="_blank" class="pub-link-btn featured">
+                                target="_blank" rel="noopener noreferrer" class="pub-link-btn featured">
                                 <svg viewBox="0 0 24 24">
                                     <path
                                         d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
@@ -422,31 +477,34 @@
             <h2 class="section-title"><span>Hobbies</span></h2>
 
             <div class="glass-panel bio-card reveal" style="padding: 36px;">
-                <p>I have been an avid <a href="https://en.wikipedia.org/wiki/Board_wargame" target="_blank">board
+                <p>I have been an avid <a href="https://en.wikipedia.org/wiki/Board_wargame" target="_blank"
+                        rel="noopener noreferrer">board
                         wargame</a> player since college, spending ~1000 hours at the tables.</p>
                 <!-- My favorite game is <a href="https://boardgamegeek.com/boardgame/91/paths-of-glory"
-                        target="_blank">Paths of Glory</a> (1999), whose title comes from
-                    <a href="https://en.wikipedia.org/wiki/Paths_of_Glory" target="_blank">Stanley Kubrick's 1957
+                        target="_blank" rel="noopener noreferrer">Paths of Glory</a> (1999), whose title comes from
+                    <a href="https://en.wikipedia.org/wiki/Paths_of_Glory" target="_blank" rel="noopener noreferrer">Stanley Kubrick's 1957
                         film on World War I</a>.  -->
                 <!-- Other wargame series I have enjoyed include <a
-                        href="https://boardgamegeek.com/wiki/page/Operational_Combat_System" target="_blank">Operational
+                        href="https://boardgamegeek.com/wiki/page/Operational_Combat_System" target="_blank" rel="noopener noreferrer">Operational
                         Combat Series</a> (1992-), <a
                         href="https://boardgamegeek.com/boardgamefamily/109/series-la-bataille-marshal-enterprises-clash-of-ar"
-                        target="_blank">La Bataille Series</a> (1975-), <a
-                        href="https://boardgamegeek.com/boardgame/243/advanced-squad-leader" target="_blank">Advanced
+                        target="_blank" rel="noopener noreferrer">La Bataille Series</a> (1975-), <a
+                        href="https://boardgamegeek.com/boardgame/243/advanced-squad-leader" target="_blank" rel="noopener noreferrer">Advanced
                         Squad Leader</a> (1985-), and <a
                         href="https://boardgamegeek.com/boardgame/291434/axis-empires-ultimate-edition"
-                        target="_blank">Axis Empires: Ultimate Edition</a> (2023).  -->
+                        target="_blank" rel="noopener noreferrer">Axis Empires: Ultimate Edition</a> (2023).  -->
                 <p>I created and maintained one of the largest active board wargame communities in China for
                     nearly 10 years. I wrote multiple popular guides, including "Paths of Glory: A Probabilistic
                     Perspective", which has been the de facto must-read for every new Chinese player of <a
-                        href="https://boardgamegeek.com/boardgame/91/paths-of-glory" target="_blank">
+                        href="https://boardgamegeek.com/boardgame/91/paths-of-glory" target="_blank"
+                        rel="noopener noreferrer">
                         this classic WWI wargame</a> since 2018 (It still has 200+ active visitors per month after 8
                     years!)
                 </p>
                 <p>I also write fanfics anonymously. One of my series (for <a
-                        href="https://en.wikipedia.org/wiki/BanG_Dream!" target="_blank">Bandori</a>)
-                    has accumulated 100k+ views on Bilibili 😂</p>
+                        href="https://en.wikipedia.org/wiki/BanG_Dream!" target="_blank"
+                        rel="noopener noreferrer">Bandori</a>)
+                    has accumulated 100k+ views on Bilibili.</p>
             </div>
         </section>
     </main>
@@ -455,7 +513,7 @@
     <footer>
         <div class="footer-container">
             <div class="footer-text">
-                &copy; Last updated May 2026.
+                &copy; Last updated June 2026.
             </div>
         </div>
     </footer>
