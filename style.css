@@ -464,6 +464,11 @@ section {
     overflow: hidden;
 }
 
+.pub-authors.collapsible.expanded {
+    max-height: none;
+    overflow: visible;
+}
+
 .pub-authors.collapsible:not(.expanded)::after {
     content: '';
     position: absolute;
